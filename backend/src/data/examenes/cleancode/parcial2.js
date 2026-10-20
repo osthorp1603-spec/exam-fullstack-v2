@@ -1,104 +1,101 @@
-export const cleancodeparcial2  = [
+export const cleancodeparcial2 = [
     {
-        enunciado: `En un módulo de autenticación, se refactoriza una validación cambiando <span style="color:darkorange">if intentos != 0:</span> por <span style="color:darkorange">if intentos:</span>.<br>
-        Si la variable <span style="color:darkblue">intentos</span> (un entero) llega con valor <span style="color:darkorange">0</span>, <b>¿cómo afecta esto al flujo del programa?</b>`,
+        enunciado: `Un estudiante cambia la condición <span style="color:darkorange">if cantidad != 0:</span> por simplemente <span style="color:darkorange">if cantidad:</span>.<br>
+        Si la variable <span style="color:darkblue">cantidad</span> vale exactamente <span style="color:darkorange">0</span>, <b>¿qué hace el programa?</b>`,
         opciones: [
-            "La condición se evalúa como verdadera porque la variable existe en memoria.",
-            "El flujo ignora el bloque de validación y salta directamente a la instrucción else.",
-            "El programa lanza un error de tipo al intentar evaluar el entero."
+            "Entra al if porque la variable existe en la memoria.",
+            "Salta directo al else porque evalúa como falso.",
+            "Da un error porque no se puede comparar un cero."
         ],
         correcta: "b"
     },
     {
-        enunciado: `Una función que procesa reportes masivos inicia con la instrucción <span style="color:darkorange">if not datos: return "Error"</span>.<br>
-        El código restante contiene 50 líneas de cálculos.<br>
-        Si se invoca la función con una lista vacía, <b>¿qué consecuencia directa tiene esta cláusula de guarda?</b>`,
+        enunciado: `Una función empieza con la instrucción <span style="color:darkorange">if not lista: return "Vacío"</span>.<br>
+        Si se manda una lista vacía a esa función, <b>¿qué pasa con el resto del código?</b>`,
         opciones: [
-            "Las 50 líneas se ejecutan, pero devuelven 0 por defecto.",
-            "Se lanza un error de tipo por intentar evaluar una lista sin elementos.",
-            "Las 50 líneas no se ejecutan, evitando cálculos innecesarios y saliendo de inmediato."
+            "Se ejecuta todo el código, pero no muestra nada.",
+            "El programa da un error por recibir una lista vacía.",
+            "Se sale de la función de inmediato y se ahorra hacer los cálculos."
         ],
         correcta: "c"
     },
     {
-        enunciado: `Dos funciones independientes (para ventas online y físicas) aplican la misma fórmula de descuento de forma manual.<br>
-        Si la gerencia decide cambiar el porcentaje de descuento, <b>¿qué problema operativo refleja la falta de refactorización (principio DRY)?</b>`,
+        enunciado: `Tienes dos funciones diferentes y en ambas está escrita la misma fórmula para calcular un descuento.<br>
+        Si mañana el descuento cambia, <b>¿qué problema hay con tener el código así?</b>`,
         opciones: [
-            "Se debe modificar la fórmula en múltiples ubicaciones, aumentando el riesgo de inconsistencias.",
-            "El intérprete arrojará un error de colisión de variables en tiempo de ejecución.",
-            "Ambas funciones se ejecutarán más lentamente debido a la redundancia de código."
+            "Hay que cambiarlo en varios lados y es muy fácil olvidar uno.",
+            "El programa se vuelve más lento por tener código repetido.",
+            "Las variables de las dos funciones chocan entre sí."
         ],
         correcta: "a"
     },
     {
-        enunciado: `Un script valida el nombre de un usuario con <span style="color:darkorange">if nombre != "":</span>.<br>
-        Se refactoriza a <span style="color:darkorange">if nombre:</span>.<br>
-        Si el usuario envía una cadena vacía (<span style="color:darkorange">""</span>), <b>¿cuál es el resultado operativo?</b>`,
+        enunciado: `Cambias la condición <span style="color:darkorange">if nombre != "":</span> por <span style="color:darkorange">if nombre:</span>.<br>
+        Si el usuario no escribe nada (deja el campo vacío), <b>¿qué resultado da esa condición?</b>`,
         opciones: [
-            "La condición evalúa como False, entrando al bloque de rechazo.",
-            "El programa requiere convertir la cadena a booleano explícitamente o fallará.",
-            "Se lanza una excepción por no comparar explícitamente con comillas vacías."
+            "Es falsa, así que el programa entra al else (rechazo).",
+            "Es verdadera, porque el campo de texto sí existe.",
+            "El programa se cae porque faltan las comillas vacías."
         ],
         correcta: "a"
     },
     {
-        enunciado: `Se analiza un bloque con múltiples niveles de anidación (<span style="color:darkorange">if A: if B: if C:</span>).<br>
-        Tras aplicar refactorización, se aplanan las condiciones usando retornos tempranos.<br>
-        <b>¿Qué cambio se observa en el comportamiento del programa?</b>`,
+        enunciado: `Tienes un código con muchos <span style="color:darkorange">if</span> metidos uno dentro de otro.<br>
+        Lo arreglas usando retornos tempranos (<span style="color:darkorange">return</span>). <b>¿Qué logras con esto?</b>`,
         opciones: [
-            "Las condiciones ahora son mutuamente excluyentes y ya no evalúan todas.",
-            "El resultado final se mantiene idéntico, pero el flujo se lee de arriba hacia abajo.",
-            "El intérprete procesa las condiciones en orden inverso, cambiando la salida."
+            "Que el programa evalúe las condiciones en orden diferente.",
+            "Que el código se lea de arriba a abajo sin tanta sangría, dando el mismo resultado.",
+            "Que el programa se ejecute más rápido en la computadora."
         ],
         correcta: "b"
     },
     {
-        enunciado: `Un desarrollador reemplaza el bloque <span style="color:darkorange">if total > 500: return True else: return False</span> por la instrucción <span style="color:darkorange">return total > 500</span>.<br>
-        Si se invoca la función con un valor de <span style="color:darkblue">total</span> de <span style="color:darkorange">500</span>, <b>¿qué valor retorna?</b>`,
+        enunciado: `Cambias el bloque <span style="color:darkorange">if total > 500: return True</span> (y su else) por <span style="color:darkorange">return total > 500</span>.<br>
+        Si el valor de <span style="color:darkblue">total</span> es exactamente <span style="color:darkorange">500</span>, <b>¿qué devuelve la función?</b>`,
         opciones: [
-            "None",
+            "Nada (None)",
             "False",
             "500"
         ],
         correcta: "b"
     },
     {
-        enunciado: `En una función de nómina, existe la variable <span style="color:darkblue">bono_extra</span> que nunca se utiliza en el retorno.<br>
-        Si se elimina esa línea durante la refactorización, <b>¿qué sucede al ejecutar la función?</b>`,
+        enunciado: `En una función creas la variable <span style="color:darkblue">bono_extra</span> pero luego nunca la usas para nada.<br>
+        Si borras esa línea de código, <b>¿qué pasa al ejecutar el programa?</b>`,
         opciones: [
-            "Se lanza un error de variable no declarada en el retorno.",
-            "El salario final se reduce en un 10% automáticamente.",
-            "El resultado de retorno de la función es exactamente el mismo."
+            "Da error porque falta esa variable en el retorno.",
+            "El resultado final cambia porque falta ese cálculo.",
+            "Todo funciona exactamente igual que antes."
         ],
         correcta: "c"
     },
     {
-        enunciado: `En un controlador de inventario, una función de validación retorna el número <span style="color:darkorange">0</span> si el stock es válido, pero retorna el texto <span style="color:darkorange">"Dato inválido"</span> si no lo es.<br>
-        Si otra función intenta sumar ese resultado directamente a un entero, <b>¿qué ocurre con el código?</b>`,
+        enunciado: `Una función devuelve el número <span style="color:darkorange">0</span> si todo está bien, pero devuelve el texto <span style="color:darkorange">"Error"</span> si algo falla.<br>
+        Si otra parte del código intenta sumar ese resultado, <b>¿qué ocurre?</b>`,
         opciones: [
-            "El intérprete fuerza la conversión del texto a 0 para no romper la suma.",
-            "La suma se ejecuta normalmente devolviendo NaN (Not a Number).",
-            "Se lanza un TypeError al intentar sumar un entero con un string."
+            "El texto se convierte en 0 automáticamente para poder sumar.",
+            "La suma se hace normal pero da como resultado un error de texto.",
+            "El programa da un error porque no se puede sumar un texto con un número."
         ],
         correcta: "c"
     },
     {
-        enunciado: `En el código de facturación, el bloque <span style="color:darkorange">if tipo_cliente == "VIP":</span> y el bloque <span style="color:darkorange">else:</span> contienen exactamente la misma instrucción de cálculo.<br>
-        <b>¿Cuál es la refactorización más adecuada para este escenario?</b>`,
+        enunciado: `Tienes un <span style="color:darkorange">if</span> y un <span style="color:darkorange">else</span> que hacen exactamente el mismo cálculo, solo cambia la condición.<br>
+        <b>¿Qué deberías hacer para limpiar ese código?</b>`,
         opciones: [
-            "Convertir la estructura en un bucle while infinito.",
-            "Eliminar la condición if-else y dejar solo la instrucción de cálculo.",
-            "Invertir la condición a if tipo_cliente != VIP para balancear el código."
+            "Cambiar la estructura por un bucle while.",
+            "Quitar el if y el else, y dejar el cálculo escrito una sola vez.",
+            "Invertir la condición para que quede al revés."
         ],
         correcta: "b"
     },
     {
-        enunciado: `Un estudiante refactoriza un bucle for que sumaba elementos de una lista, reemplazándolo por la función nativa <span style="color:darkorange">sum([15, 25, "30"])</span>.<br>
-        <b>¿Cuál es la consecuencia de esta refactorización al ejecutar el código?</b>`,
+        enunciado: `Reemplazas un bucle for que sumaba números por la función nativa <span style="color:darkorange">sum([15, 25, "30"])</span>.<br>
+        Al ejecutar el código, <b>¿qué pasa?</b>`,
         opciones: [
-            "Se lanza un TypeError porque la función no puede operar con strings.",
-            "El string se ignora y la función retorna 40.",
-            "El string se concatena al resultado final como texto."
+            "Da error porque no se pueden sumar textos con números.",
+            "Ignora el texto y suma solo los números dando 40.",
+            "Pega el texto al final del resultado de la suma."
         ],
         correcta: "a"
     }
