@@ -166,6 +166,10 @@ The database has a single table, `respuestas`, with a `UNIQUE` constraint on `(a
 
 Unlike V1, where the correct answers were embedded in a downloadable JavaScript file, V2 keeps them exclusively on the server. A student inspecting the network tab will only see the questions and options, never the solution.
 
+## Live Demo
+- **Student App:** [https://parciales-pec.netlify.app](https://parciales-pec.netlify.app)
+- **Admin Panel (Teachers only):** [https://parciales-pec.netlify.app/admin](https://parciales-pec.netlify.app/admin)
+
 ## Evidence
 
 ![registration_form](./evidencias/registro.png)
@@ -174,3 +178,4 @@ Unlike V1, where the correct answers were embedded in a downloadable JavaScript 
 ![score_view](./evidencias/nota.png)
 ![incorrect_answers](./evidencias/verificarrespuestas.png)
 ![admin_dashboard](./evidencias/admin.png)
+
