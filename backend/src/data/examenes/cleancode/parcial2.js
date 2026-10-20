@@ -1,4 +1,4 @@
-const cleancodeparcial2 = [
+export const cleancodeparcial2  = [
     {
         enunciado: `En un módulo de autenticación, se refactoriza una validación cambiando <span style="color:darkorange">if intentos != 0:</span> por <span style="color:darkorange">if intentos:</span>.<br>
         Si la variable <span style="color:darkblue">intentos</span> (un entero) llega con valor <span style="color:darkorange">0</span>, <b>¿cómo afecta esto al flujo del programa?</b>`,
