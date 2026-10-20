@@ -1,4 +1,5 @@
 export const materias = [
+    "clean code",
     "Desarrollo web",
     "Diagnostico y redes",
     "Estructura de datos",
