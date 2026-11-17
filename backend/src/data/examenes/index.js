@@ -7,11 +7,12 @@ import { fundamentosProgramacionParcial1 } from "./fundamentosprogramacion/parci
 //faltas producto1 parcial 1
 import { producto2Pacial2 } from "./producto2/parcial2.js";
 //Espacia para parcial final producto 2
-import {cleancodeparcial2} from "./cleancode/parcial2.js"
-import {cleancodeparcial3 } from "./cleancode/parcial3.js"
+import {cleancodeparcial2} from "./cleancode/parcial2.js";
+import {cleancodeparcial3 } from "./cleancode/parcial3.js";
 
 
 import { estructuradatosparcial2 } from "./estructuradatos/parcial2.js";
+import { estructuradatosparcial3 } from "./estructuradatos/parcial3.js";
 
 export const examenes = {
     "Desarrollo web": {
@@ -34,7 +35,8 @@ export const examenes = {
     },
 
     "Estructura de datos":{
-        "Parcial II": estructuradatosparcial2
+        "Parcial II": estructuradatosparcial2,
+        "Parcial III": estructuradatosparcial3
     }
 
 };
