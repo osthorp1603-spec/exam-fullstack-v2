@@ -7,7 +7,8 @@ import { fundamentosProgramacionParcial2 } from "./fundamentosprogramacion/parci
 
 //faltas producto1 parcial 1
 import { producto2Pacial2 } from "./producto2/parcial2.js";
-//Espacia para parcial final producto 2
+import { producto2Pacial3 } from "./producto2/parcial3.js";
+//////////////////////////////////////////////////////////////////////////////////
 import {cleancodeparcial2} from "./cleancode/parcial2.js";
 import {cleancodeparcial3 } from "./cleancode/parcial3.js";
 /////////////////////////////////////////////////////////////////////////////////////
@@ -15,6 +16,10 @@ import { estructuradatosparcial2 } from "./estructuradatos/parcial2.js";
 import { estructuradatosparcial3 } from "./estructuradatos/parcial3.js";
 ///////////////////////////////////////////////////////////////////////////////////////
 import { diagnosticoyredesparcial2 } from "./diagnosticoyredes/parcial2.js";
+
+import { patronesparcial2 } from "./patrones/parcial2.js";
+
+import { modelamientoparcial2 } from "./modelamiento/parcial2.js";
 
 
 export const examenes = {
@@ -30,7 +35,8 @@ export const examenes = {
     },
 
     "Producto II": {
-        "Parcial II": producto2Pacial2        
+        "Parcial II": producto2Pacial2,
+        "Parcial III": producto2Pacial3        
     },
     
     "clean code": {
@@ -45,6 +51,14 @@ export const examenes = {
 
     "Diagnostico y redes":{
         "Parcial II": diagnosticoyredesparcial2
+    },
+    
+    "Patrones de diseño":{
+        "Parcial II": patronesparcial2
+    },
+
+    "Modelamiento base de datos":{
+        "Parcial II": modelamientoparcial2
     }
 
 };
