@@ -1,4 +1,4 @@
-export const modelamientoparcial2 = [
+export const  modelamientoparcial2 = [
     {
         enunciado: `Un estudiante necesita visualizar todos los registros almacenados en la tabla <span style="color:darkblue">clientes</span> después de crearla e insertar los datos.<br><br>
         <b>¿Qué consulta permite ver todos los registros?</b>`,

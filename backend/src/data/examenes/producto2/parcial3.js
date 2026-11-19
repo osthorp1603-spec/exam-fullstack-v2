@@ -1,4 +1,4 @@
-export const producto2parcial3 = [
+export const producto2Pacial3  = [
     {
         enunciado: `Durante la <span style="color:darkblue">sustentación de proyectos</span> el estudiante debe explicar cómo funciona el sistema desarrollado.<br><br>
         <b>¿Cuál es el propósito principal de la sustentación?</b>`,
