@@ -21,6 +21,8 @@ import { patronesparcial2 } from "./patrones/parcial2.js";
 
 import { modelamientoparcial2 } from "./modelamiento/parcial2.js";
 
+import { programacionparcial2 } from "./programacionI/parcial2.js";
+
 
 export const examenes = {
     "Desarrollo web": {
@@ -59,6 +61,10 @@ export const examenes = {
 
     "Modelamiento base de datos":{
         "Parcial II": modelamientoparcial2
+    },
+
+    "Programacion I": {
+        "Parcial II": programacionparcial2
     }
 
 };
