@@ -23,6 +23,8 @@ import { modelamientoparcial2 } from "./modelamiento/parcial2.js";
 
 import { programacionparcial2 } from "./programacionI/parcial2.js";
 
+import { logicaparcial2 } from "./logica/parcial2.js";
+
 
 export const examenes = {
     "Desarrollo web": {
@@ -65,6 +67,10 @@ export const examenes = {
 
     "Programacion I": {
         "Parcial II": programacionparcial2
+    },
+
+    "Logica matematicas":{
+        "Parcial II": logicaparcial2
     }
 
 };
